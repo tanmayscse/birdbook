@@ -72,7 +72,7 @@ In conclusion, mobilenet might not be an ideal option for a fast training classi
 #### Efficientnet with weights EfficientNet_B3_Weights.IMAGENET1K_V1
 
 Efficientnet seemed like the next best option. However, it had an issue of high loss in the beginning. This took a 
-long time to converge. It did converge in the end after considerable training and I trained it to ~70% accuracy with a colab GPU. However, 
+long time to converge. It did converge in the end after considerable training and I trained it to ~70% accuracy with a colab GPU over 10 epochs. However, 
 it is not an economical or fast solution. 
 
 ![Efficientnet observation]( images/efficientnet.png "Efficientnet observation")
@@ -104,7 +104,8 @@ midway in the process.
 
 
 As seen above, Resnet50 seemed to be converging a lot faster than Resnet101, as it was a bit easier to locate a
-good learning rate.
+good learning rate. I was able to get ~73% accuracy with it within 6 epochs. Considering the rate of convergence, 
+the accuracy should rise to anywhere between 75-78% in 10 epochs. 
 
 
 ### Conclusion
@@ -113,7 +114,7 @@ From the above results, Resnet50 seems to be the middle ground solution that see
 Efficientnet is a good classifier, but it is hard to tune with hyperparameters. Mobilenet is somewhat light, but difficult to tune and unreliable. 
 Resnet_101 is reliable, but a slower and costiler model to train. 
 
-
+Results have been submitted to kaggle
 
 
 
