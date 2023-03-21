@@ -63,6 +63,8 @@ and took a considerable time (~15 minutes per epoch) to make any significant pro
 changes (including SGD, Adam, NAdam and RMSProp). However, it did not converge much for the first 4 epochs. 
 It was keeping the loss values consistently around 6.0 and 7.0. Thus, Mobilenet did poorly for step 1. 
 
+![Mobilenet observation]( images/mobilenet.png "Mobilenet observation")
+
 In conclusion, mobilenet might not be an ideal option for a fast training classifier on image based datasets
 
 
@@ -85,7 +87,7 @@ kaggle GPUs to train it for a longer period than colab, I started training it wi
 P 100 GPU. However, it was still a slow process, and did not converge as fast as expected across the 
 range of learning rates I tried. 
 
-![Resnet101 observation]( images/resnet101_all.png "Resnet101 observation")
+![Resnet101 observation](images/resnet101_all.png "Resnet101 observation")
 
 This points to the idea that Resnet101 is slow to converge, but it converges steadily with time. 
 
@@ -97,7 +99,8 @@ as compared to the Resnet101. I trained it on colab GPUs, but couldn't train it 
 the colab timed out by the 5th epoch. However, the 4+2 epoch step seemed to be doing fine with a need to switch to CPU 
 midway in the process. 
 
-![Resnet50 observation]( images/res50.png "Resnet50 observation")
+![Resnet50 observation]( images/res50.png "")
+
 
 As seen above, Resnet50 seemed to be converging a lot faster than Resnet101, as it was a bit easier to locate a
 good learning rate.
