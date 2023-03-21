@@ -19,6 +19,7 @@ train and run the less intensive (pre-trained) models. The models which I tested
 Resnet101 model is intuitively not less intensive to train. However, I decided to use it  
 as a comparison factor, and also because resnet 50 is the default model we used in the class. 
 
+Video: https://www.youtube.com/watch?v=_-yyJsA3NYM
 
 ### Method
 
